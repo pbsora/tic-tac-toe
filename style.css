@@ -11,15 +11,15 @@ body {
 }
 
 .container {
-  width: 25rem;
-  height: 25rem;
+  width: 35rem;
+  height: 35rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   background-position: 50%;
   background-size: auto;
   color: white;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-family: "Press Start 2P", cursive;
 }
 
@@ -27,10 +27,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: white 1px solid;
   user-select: none;
+  cursor: pointer;
 }
 
 .square:hover {
   background-color: rgb(59, 53, 53);
+}
+
+.square-1,
+.square-4,
+.square-2,
+.square-5 {
+  border-right: white 2px solid;
+  border-bottom: white 2px solid;
+}
+
+.square-3,
+.square-6 {
+  border-bottom: white 2px solid;
+}
+
+.square-7,
+.square-8 {
+  border-right: white 2px solid;
 }
